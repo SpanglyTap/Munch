@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munchy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>munchy</h1>
+    </header>
+
+    <div class="container">
+        <main id="food-display">
+            <nav id="holiday-selector">
+                <!-- Holiday categories will be inserted here -->
+            </nav>
+            <div id="food-grid-container">
+                 <!-- Food items will be displayed here -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Munchy. All rights reserved.</p>
+    </footer>
+
+    <div id="recipe-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body">
+                <!-- Recipe details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "canvas-confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.module.mjs"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
